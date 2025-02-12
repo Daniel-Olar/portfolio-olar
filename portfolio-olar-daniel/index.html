@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Olar</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+</head>
+<body>
+
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a">D</i>
+                    <div class="logo-text">Daniel Olar</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="../../avatar.jpg" alt="profile image">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Daniel Olar</h1>
+                    <p>As a passionate Junior Front-End Developer, I specialize in creating dynamic and responsive web applications using Angular. With a solid foundation in HTML, CSS, and JavaScript, I am eager to leverage my skills to build user-friendly interfaces that enhance the overall user experience.</p>
+                    <div class="btn-group">
+                        <a href="https://app.enhancv.com/share/08f0beec/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic" class="btn active">Download CV</a>
+                        <a href="mailto:danielolarbusiness@gmail.com" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="www.linkedin.com/in/daniel-olar-67b325317"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/Daniel-Olar"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <hr>
+            
+            <div class="section-resume">
+                    <h5 id="resume"> <span class="aboutme">About Me</span>
+                        <br>
+                        <br>As a passionate Junior Front-End Developer, I specialize in creating dynamic and responsive web applications using Angular. With a solid foundation in HTML, CSS, and JavaScript, I am eager to leverage my skills to build user-friendly interfaces that enhance the overall user experience.</h5>
+                    <br>
+                    <hr>
+                    <h3 class="keyskills" id="skills">Key Skills</h3>
+
+                    <br>
+                    
+                    <h5>* HTML5 and CSS3: Fundamentals for creating web pages.</h5>
+                    <h5>* JavaScript, ECMAScript 6, and TypeScript: Advanced programming to make pages interactive.</h5>
+                    <h5>* Frameworks and Libraries:</h5>
+                    <h5>* Bootstrap: Responsive design and rapid development.</h5>
+                    <h5>* Angular and Angular Advanced: Creating dynamic web applications.</h5>
+                    <h5>* Node.js, Express, and MongoDB: Backend development and data management.</h5>
+                    <h5>* Design and UX/UI: Design principles to enhance user experience.</h5>
+                    <h5>* Version Control: Using GIT for version control.</h5>
+                    <h5>* Web Technologies: Implementing Ajax for asynchronous interactions.</h5>
+            </div>
+            <hr>
+            <div class="contact"><h3 id="contact">Contact</h3>
+                <h5>I specialize in technologies such as HTML, CSS, JavaScript, and Angular, and I am passionate about creating clean, responsive, and user-friendly web applications.
+    
+                    I am currently seeking opportunities to further develop my skills in a professional environment and contribute to exciting projects. I would love the chance to bring my enthusiasm, willingness to learn, and strong problem-solving abilities to a team that values growth and collaboration.
+                    
+                    If you are aware of any Junior Front-End Developer positions, I would be excited to connect and discuss how I can contribute to the success of your clients or organization.
+                    
+                    Thank you for considering my profile. I look forward to hearing from you soon.
+                    
+                    <a href="mailto:danielolarbusiness@gmail.com" class="btncontact">Contact Me</a></h5></div>
+        </div>
+    </div>
+    <script>
+        var togglebtn = document.querySelector(".togglebtn")
+        var nav = document.querySelector(".navlinks")
+        var links = document.querySelector(".navlinks li")
+
+        togglebtn.addEventListener("click", function (){
+            this.classList.toggle("click")
+            nav.classList.toggle("open")
+        })
+
+        var typed = new Typed (".input", {
+            strings:["Frontend Developer"],
+            typeSpeed:70,
+            backSpeed:150,
+            loop:true
+        })
+
+        
+    </script>
+    
+</body>
+</html>
